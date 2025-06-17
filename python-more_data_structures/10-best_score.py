@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if key in a_dictionary:
-        max = 0
-        for key, value in a_dictionary:
-            if a_dictionary[key] > max:
-                max = a_dictionary[key]
-    return max
+    if not a_dictionary:
+        return None
+    max_value = float('-inf')
+    max_key = None
+    for key, value in a_dictionary.items():
+        if value > max_value:
+            max_value = value
+            max_key = key
+    return max_key
