@@ -13,6 +13,6 @@ def roman_to_int(roman_string):
         if value < pre_value:
             total -= value
         else:
-            total += value 
+            total += value
             pre_value = value
     return total
