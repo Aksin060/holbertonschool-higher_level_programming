@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 '''Salam. Bu modul Rectangle sinfini təyin edir.'''
 
 
