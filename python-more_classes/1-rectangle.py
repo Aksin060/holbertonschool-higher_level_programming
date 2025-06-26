@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''salam.'''
+
+
 class Rectangle:
     '''salam.'''
 
@@ -10,8 +12,8 @@ class Rectangle:
     @property
     def width(self):
         return self.__width
-    @width.setter
 
+    @width.setter
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
