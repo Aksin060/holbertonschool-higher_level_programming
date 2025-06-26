@@ -6,6 +6,8 @@ class Rectangle:
     '''Düzbucaqlı sinf'''
     number_of_instances = 0
     print_symbol = "#"
+    rect_1 = 0
+    rect_2 = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
