@@ -21,4 +21,4 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
 if __name__ == "__main__":
-    print(issubclass(Rectangle, BaseGeometry)) 
+    print(issubclass(Rectangle, BaseGeometry))
