@@ -1,7 +1,19 @@
 #!/usr/bin/python3
 '''Salam'''
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+# class BaseGeometry:
+#     def area(self):
+#         raise Exception("area() is not implemented")
+#
+#     def integer_validator(self, name, value):
+#         if not isinstance(value, int):
+#             raise TypeError(f"{name} must be an integer")
+#         if value <= 0:
+#             raise ValueError(f"{name} must be greater than 0")
+
 
 class Rectangle(BaseGeometry):
     """Rectangle class that inherits from BaseGeometry"""
@@ -19,17 +31,6 @@ class Rectangle(BaseGeometry):
         """String representation of the rectangle"""
         return f"[Rectangle] {self.__width}/{self.__height}"
 
-class Square(Rectangle):
-    def __init__(self, size):
-        self.integer_validator("size", size)
-        super().__init__(size, size)
-        self.__size = size
-
-    def area(self):
-        return self.__size * self.__size
 
 if __name__ == "__main__":
     print(issubclass(Rectangle, BaseGeometry))
-    s = Square(5)
-    print(s)
-    print(s.area())
