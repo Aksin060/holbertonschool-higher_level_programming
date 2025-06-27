@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''Salam'''
 
-
 class BaseGeometry:
     '''Salam'''
     def area(self):
@@ -15,11 +14,11 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     '''Salam'''
-    def __init__(self, width, height):        
+    def __init__(self, width, height):
         self.integer_validator('width', width)
         self.integer_validator('height', height)
         self.__width = width
         self.__height = height
 
 if __name__ == "__main__":
-    print(issubclass(Rectangle, BaseGeometry))
+    print(issubclass(Rectangle, BaseGeometry)) 
