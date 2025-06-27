@@ -31,5 +31,6 @@ class Rectangle(BaseGeometry):
         """String representation of the rectangle"""
         return f"[Rectangle] {self.__width}/{self.__height}"
 
+
 if __name__ == "__main__":
     print(issubclass(Rectangle, BaseGeometry))
