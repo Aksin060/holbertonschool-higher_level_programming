@@ -3,7 +3,6 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 '''class BaseGeometry:
-    '''Salam'''
     def area(self):
         raise Exception("area() is not implemented")
 
