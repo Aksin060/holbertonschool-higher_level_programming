@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Salam'''
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 class BaseGeometry:
     '''Salam'''
     def area(self):
